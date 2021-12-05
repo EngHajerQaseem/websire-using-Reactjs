@@ -1,0 +1,99 @@
+
+.home-section nav{
+  display: flex;
+  justify-content: end;
+  height: 6vh;
+  background-color:linen;
+  align-items: center;
+  position: fixed;
+  min-width: 100vw;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  right: 0;
+}
+
+.home-section nav .sidebar-button{
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+nav .sidebar-button i{
+  font-size: 35px;
+  margin-right: 10px;
+}
+
+
+.home-section nav .profile-details{
+  display: flex;
+  align-items: center;
+  background: snow;
+  border-radius: 6px;
+  height: 40px;
+  min-width: 190px;
+  padding: 0 15px 0 2px;
+}
+nav .profile-details img{
+  height: 40px;
+  width: 40px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+nav .profile-details .admin_name{
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+nav .profile-details i{
+  font-size: 25px;
+  color: #333;
+}
+
+.logout{
+  width: 5%;
+  margin-left: 2%;
+}
+.logout img{
+  width: 40%;
+}
+
+.home-section nav .search-box{
+  position: relative;
+  height: 50px;
+  max-width: 550px;
+  width: 100%;
+  margin: 0 200px;
+}
+nav .search-box input{
+  height: 80%;
+  width: 100%;
+  outline: none;
+  background: snow;
+  border: 2px solid snow;
+  border-radius: 12px;
+  font-size: 14px;
+  padding: 20px 10px;
+  
+}
+nav .search-box .bx-search{
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background: #2697FF;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  transition: all 0.4 ease;
+}
+
+
+
+
+
