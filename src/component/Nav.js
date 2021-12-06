@@ -84,7 +84,7 @@ const Nav = () => {
 
               <li>
                 <Link to="#" className="s-sidebar__nav-link">
-                  <img src={classes} className="img1" /><em>Classes</em>
+                  <img src={classes} className="img1" /><em>Grades</em>
                 </Link>
               </li>
 

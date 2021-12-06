@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
-
+import BarChart from './BarChart';
+import LineChart from "./LineChart";
+import PieChart from "./PieChart";
 
 import "./css/Dashboard.css";
 import Header from "../component/Header";
@@ -10,6 +12,7 @@ import teacher from './images/teacher.png';
 import parent from './images/parent.png';
 import student from './images/student.png';
 import school from './images/school.png';
+
 
 const Dashboard = () => {
   useEffect(() => {
@@ -45,8 +48,22 @@ const Dashboard = () => {
           <div className="d05"> <img src={student} /> <span><b>4500</b>Student</span></div>
         </div>
 
-        {/* Pie chart */}
+        {/* Line chart */}
 
+        <div className="Line">
+       <LineChart/>
+        </div>
+
+        {/* Pie Chart */}
+        <div className="Pie">
+        <PieChart/>
+        </div>
+
+         {/* Bar Chart */}
+         <div className="Bar">
+          <BarChart/>
+      
+        </div>
        
 
       </div>

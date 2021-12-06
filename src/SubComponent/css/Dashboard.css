@@ -199,13 +199,37 @@
 
 }
 
-.pie{
-    background-color: yellow;
-    width: 50%;
-    height: 80%;
-    top:17%;
-    position: inherit;
+ .Bar{
+    background-color: linen;
+    width: 45%;
+    height: 42%;
+    top:57%;
+    position:absolute;
+    right: 55%;
+} 
+
+
+.Pie{
+    background-color: white;
+    width: 38%;
+    height: 70%;
+    top:20%;
+    position:fixed;
+    left: 60%;
 }
+
+
+
+
+.Line{
+    background-color: linen;
+    width: 45%;
+    height: 43%;
+    top:13%;
+    position: inherit;
+    
+} 
+
 
 
     
