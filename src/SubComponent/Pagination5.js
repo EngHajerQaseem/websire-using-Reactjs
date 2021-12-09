@@ -1,4 +1,5 @@
 import React from "react";
+import "./css/Users.css";
 
 import { useTable, usePagination } from "react-table";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -135,9 +136,8 @@ function PaginationTableComponent5() {
   const columns = React.useMemo(
     () => [
       {
-        Header: "Name",
-        columns: [
-          {
+       
+          
             Header: "User Name",
             accessor: "username",
           },
@@ -145,27 +145,38 @@ function PaginationTableComponent5() {
             Header: "Gender",
             accessor: "gender",
           },
-        ],
-      },
-      {
-        Header: "Info",
-        columns: [
           {
             Header: "Roll",
             accessor: "roll",
+
           },
+
           {
+
             Header: "Edit",
             accessor: "edit",
+            Cell: ({ cell }) => (
+             <a href="/EditUser"> <button  className="edit">
+                Edit
+              </button></a>
+            )
           },
           {
-            Header: "delete",
-            accessor: "delete",
+            Header: "Activtion",
+            accessor: "activtion",
+            Cell: ({ cell }) => (
+              <a href="#"> <button  className="delete">
+                 UnActive
+               </button></a>
+            )
+            
           },
         ],
-      },
-    ],
-    []
+      
+      
+        
+   
+  
   );
 
   const data = [
@@ -173,8 +184,8 @@ function PaginationTableComponent5() {
       username: "Mohammed",
       gender: "Male",
       roll: "Super Admin",
-      edit: 34,
-      delete: "Active",
+      edit: "",
+      delete: "",
     },
   ];
   console.log(JSON.stringify(data));

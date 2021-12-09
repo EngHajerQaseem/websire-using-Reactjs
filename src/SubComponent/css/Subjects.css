@@ -19,6 +19,8 @@
 
 }
 
+
+
 #box {
     width: 28%;
     height: 20%;
@@ -38,6 +40,26 @@
     z-index: 1000;
   }
   #box:target {display: block;}
+
+  #box2 {
+    width: 28%;
+    height: 80%;
+    text-align: center;
+    
+    border: 3px solid linen;
+    border-radius: 6px;
+    color: #0000cc;
+    display: none;
+    position: absolute;
+    top: 15;
+    right: 0;
+    bottom: 0%;
+    left: 0;
+    margin: auto;
+    background-color: linen;
+    z-index: 1000;
+  }
+  #box2:target {display: block;}
   .close {
     display: inline-block;
     
@@ -49,7 +71,17 @@
     font-size: 14pt;
     cursor:pointer;
   }
-
+  .close2 {
+    display: inline-block;
+    
+    color: #0000cc;
+    
+    margin: 10px;
+    text-decoration: none;
+    
+    font-size: 14pt;
+    cursor:pointer;
+  }
 
   .view{
     width: 100%;
@@ -67,11 +99,22 @@
     border-radius: 6px;
 }
 
+.adds2{
+    width:100%;
+    background-color: #190003;
+    color: linen;
+    font-weight: 600;
+    font-size: 25px;
+    border-radius: 6px;
+   
+}
+
 
 .for1{
     margin-top:5%;
     margin-left:1%;
     font-weight: 600;
+    height: 100%;
 }
 
 .for1 label{
@@ -82,6 +125,25 @@
 }
 
 .for1 input{
+    margin-right:15%
+}
+
+
+.for2{
+    margin-top:5%;
+    margin-left:1%;
+    font-weight: 600;
+    height: 100%;
+}
+
+.for2 label{
+    padding-right: 5%;
+    color: black;
+    font-weight: 600;
+    
+}
+
+.for2 input{
     margin-right:15%
 }
 
@@ -104,3 +166,13 @@ b{
     margin-left:7%;
     text-align: center;
 }
+.update{
+    width: 20%;
+    border-radius: 6px;
+    background-color:#190033;
+    color: linen;
+    font-weight: 600;
+    margin-left:7%;
+    text-align: center;
+}
+

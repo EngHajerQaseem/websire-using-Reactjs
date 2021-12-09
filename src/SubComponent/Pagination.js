@@ -120,42 +120,41 @@ function PaginationTableComponent() {
     const columns = React.useMemo(
         () => [
             {
-                Header: 'Name',
-                columns: [
-                    {
-                        Header: 'School Name',
-                        accessor: 'schoolname',
-                    },
-                    {
-                        Header: 'Manager Name',
-                        accessor: 'managername',
-                    },
-                ],
-            },
-            {
-                Header: 'Info',
-                columns: [
-                    {
-                        Header: 'Address',
-                        accessor: 'address',
-                    },
-                    {
-                        Header: 'Phone',
-                        accessor: 'phone',
-                    },
-                    {
-                        Header: 'Status',
-                        accessor: 'status',
-                    },
-                    {
-                        Header: 'Profile Progress',
-                        accessor: 'progress',
-                    },
-                ],
-            },
-        ],
-        []
-    )
+               
+           
+                Header: "School Name",
+                accessor: "schoolname",
+              },
+              {
+                Header: "Manager Name",
+                accessor: "managername",
+              },
+              {
+                Header: "Address",
+                accessor: "address",
+    
+              },
+    
+              {
+    
+                Header: "Phone",
+                accessor: "phone",
+            
+              },
+              {
+                Header: "Status",
+                accessor: "status",
+              
+                
+              },
+            ],
+          
+          
+            
+       
+      
+      );
+
 
     const data = [
         {
@@ -163,7 +162,6 @@ function PaginationTableComponent() {
             "managername": "Fouad",
             "address": "30St",
             "phone": 46,
-            "progress": 75,
             "status": "Active"
         },
         {
@@ -171,15 +169,13 @@ function PaginationTableComponent() {
             "managername": "Sameera",
             "address": "Hada",
             "phone": 56,
-            "progress": 15,
             "status": "Active"
         },
         {
             "schoolname": "Emtiaz School",
             "managername": "Treq",
             "address": "Aden",
-            "phone": 45,
-            "progress": 66,
+            "phone":34,
             "status": "Unactive"
         },
         {
@@ -187,7 +183,6 @@ function PaginationTableComponent() {
             "managername": "Ahmed",
             "address": "Taiz",
             "phone": 25,
-            "progress": 67,
             "status": "Active"
         },
         {
@@ -195,7 +190,6 @@ function PaginationTableComponent() {
             "managername": "Ammar",
             "address":"Aden",
             "phone": 28,
-            "progress": 23,
             "status": "Unactive"
         }]
     console.log(JSON.stringify(data));

@@ -8,7 +8,9 @@ import Parents from "./SubComponent/Parents";
 import Students from "./SubComponent/Students";
 import Users from "./SubComponent/Users";
 import AddUser from "./SubComponent/AddUser";
+import EditUser from "./SubComponent/EditUser";
 import Subjects from "./SubComponent/Subjects";
+import Grades from "./SubComponent/Grades";
 
 function App() {
   return (
@@ -30,7 +32,11 @@ function App() {
 
           <Route exact path="/AddUser" element={<AddUser />} />
 
-          <Route path="/Subjects"     element={<Subjects/>}  />
+          <Route exact path="/EditUser" element={<EditUser />} />
+
+          <Route exact path="/Subjects" element={<Subjects />} />
+
+          <Route exact path="/Grades"    element={<Grades/>} />
         </Routes>
       </Router>
     </div>

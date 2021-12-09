@@ -147,3 +147,25 @@ content{
     text-align: center;
 
 }
+
+.edit{
+    width: 30%;
+    border-radius: 6px;
+    background-color:mediumblue;
+    color: linen;
+    font-weight: 600;
+    text-align: center;
+}
+.delete{
+    width: 30%;
+    border-radius: 6px;
+    background-color:darkred;
+    color: linen;
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.table {
+    border-radius: 6px;
+}

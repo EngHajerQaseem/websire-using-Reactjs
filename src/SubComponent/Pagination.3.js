@@ -120,47 +120,45 @@ function PaginationTableComponent3() {
     const columns = React.useMemo(
         () => [
             {
-                Header: 'Name',
-                columns: [
-                    {
-                        Header: 'Teacher Name',
-                        accessor: 'teachername',
-                    },
-                    {
-                        Header: 'Gender',
-                        accessor: 'gender',
-                    },
-                ],
-            },
-            {
-                Header: 'Info',
-                columns: [
-                    {
-                        Header: 'Address',
-                        accessor: 'address',
-                    },
-                    {
-                        Header: 'Phone',
-                        accessor: 'phone',
-                    },
-                    {
-                        Header: 'Age',
-                        accessor: 'age',
-                    },
-                    {
-                        Header: 'Status',
-                        accessor: 'status',
-                    },
-                   
-                ],
-            },
-        ],
-        []
-    )
+               
+           
+                Header: "Parent Name",
+                accessor: "parentname",
+              },
+              {
+                Header: "Gender Name",
+                accessor: "gender",
+              },
+              {
+                Header: "Address",
+                accessor: "address",
+    
+              },
+    
+              {
+    
+                Header: "Phone",
+                accessor: "phone",
+            
+              },
+              {
+                Header: "Status",
+                accessor: "status",
+              
+                
+              },
+            ],
+          
+          
+            
+       
+      
+      );
+
 
     const data = [
         {
-            "teachername": "Mohammed",
+            "parentname": "Mohammed",
             "gender": "Male",
             "address": "30St",
             "phone": 46,
@@ -168,7 +166,7 @@ function PaginationTableComponent3() {
             "status": "Active"
         },
         {
-            "teachername": "Saeed",
+            "parentname": "Saeed",
             "gender": "Male",
             "address": "Hada",
             "phone": 56,
@@ -176,7 +174,7 @@ function PaginationTableComponent3() {
             "status": "Active"
         },
         {
-            "teachername": "Amani",
+            "parentname": "Amani",
             "gender": "Female",
             "address": "Aden",
             "phone": 45,
@@ -184,7 +182,7 @@ function PaginationTableComponent3() {
             "status": "Unactive"
         },
         {
-            "teachername": "Nawal",
+            "parentname": "Nawal",
             "gender": "Female",
             "address": "Taiz",
             "phone": 25,
@@ -193,7 +191,7 @@ function PaginationTableComponent3() {
         },
 
         {
-            "teachername": "Hamed",
+            "parentname": "Hamed",
             "gender": "Male",
             "address": "Taiz",
             "phone": 25,
@@ -201,7 +199,7 @@ function PaginationTableComponent3() {
             "status": "Active"
         },
         {
-            "teachername": "Ahlam",
+            "parentname": "Ahlam",
             "gender": "Female",
             "address":"Aden",
             "phone": 28,

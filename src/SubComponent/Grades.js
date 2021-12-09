@@ -2,14 +2,14 @@ import React, { useEffect } from "react";
 import Header from "../component/Header";
 import Nav from "../component/Nav";
 import Footer from "../component/Footer";
-import PaginationTableComponent6 from "./Pagination6";
+import PaginationTableComponent7 from "./Pagination7";
 import { Link } from "react-router-dom";
 import "./css/Subjects.css";
 import close from "./images/close.png";
 
-const Subjects = () => {
+const Grades = () => {
   useEffect(() => {
-    document.title = "Subjects Page";
+    document.title = "Grade Page";
   }, []);
   return (
     <React.Fragment>
@@ -19,13 +19,13 @@ const Subjects = () => {
       <div className="content">
         <div id="box">
           <div className="adds">
-            <b>Add Subject </b>
+            <b>Add Grade</b>
             <a href="#" className="close">
               <img src={close} />
             </a>
           </div>
           <div className="for1">
-            <label>Subject Name</label>
+            <label>Grade Name</label>
             <input type="text" />
             <br />
             <br />
@@ -35,10 +35,10 @@ const Subjects = () => {
         </div>
 
         <a href="#box" className="add">
-          <button>Add Subject</button>
+          <button>Add Grade</button>
         </a>
         <div className="view">
-          <PaginationTableComponent6 />
+          <PaginationTableComponent7 />
         </div>
       </div>
       <Footer />
@@ -46,4 +46,4 @@ const Subjects = () => {
   );
 };
 
-export default Subjects;
+export default Grades;

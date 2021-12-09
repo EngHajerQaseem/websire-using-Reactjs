@@ -1,5 +1,6 @@
-import React from "react";
-
+import React,{Fragment} from "react";
+import "./css/Users.css";
+import close from "./images/close.png";
 import { useTable, usePagination } from "react-table";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -131,95 +132,62 @@ function Table({ columns, data }) {
   );
 }
 
-function PaginationTableComponent2() {
-    const columns = React.useMemo(
-        () => [
-            {
-               
-           
-                Header: "Teacher Name",
-                accessor: "teachername",
-              },
-              {
-                Header: "Gender",
-                accessor: "gender",
-              },
-              {
-                Header: "Address",
-                accessor: "address",
-    
-              },
-    
-              {
-    
-                Header: "Phone",
-                accessor: "phone",
-            
-              },
-              {
-                Header: "Status",
-                accessor: "status",
-              
-                
-              },
-            ],
-          
-          
-            
-       
-      
-      );
+function PaginationTableComponent7() {
+  const columns = React.useMemo(() => [
+    {
+      Header: "Grade Name",
+      accessor: "gradename",
+    },
 
+    {
+      Header: "Edit",
+      accessor: "edit",
+      Cell: ({ cell }) => (
+        <React.Fragment>
+             <div id="box2">
+          <div className="adds">
+            <b>Edit Grade </b>
+            <a href="#" className="close">
+              <img src={close} />
+            </a>
+          </div>
+          <div className="for1">
+            <label>Grade Name</label>
+            <input type="text" />
+            
+            <br/>
+            <br/>
+
+          <button className="update">Update</button>
+          </div>
+          
+        </div>
+        <a href="#box2" >
+          <button className="edit">Edit</button>
+        </a>
+        </React.Fragment>
+       
+        
+      ),
+    },
+    {
+      Header: "Activtion",
+      accessor: "activtion",
+      Cell: ({ cell }) => (
+        <a href="#">
+          
+          <button className="delete">UnActive</button>
+        </a>
+      ),
+    },
+  ]);
 
   const data = [
     {
-      teachername: "Mohammed",
-      gender: "Male",
-      address: "30St",
-      phone: 46,
-      age: 25,
-      status: "Active",
-    },
-    {
-      teachername: "Saeed",
-      gender: "Male",
-      address: "Hada",
-      phone: 56,
-      age: 15,
-      status: "Active",
-    },
-    {
-      teachername: "Amani",
-      gender: "Female",
-      address: "Aden",
-      phone: 45,
-      age: 66,
-      status: "Unactive",
-    },
-    {
-      teachername: "Nawal",
-      gender: "Female",
-      address: "Taiz",
-      phone: 25,
-      age: 67,
-      status: "Active",
-    },
+      gradename: "First Grade",
 
-    {
-      teachername: "Hamed",
-      gender: "Male",
-      address: "Taiz",
-      phone: 25,
-      age: 67,
-      status: "Active",
-    },
-    {
-      teachername: "Ahlam",
-      gender: "Female",
-      address: "Aden",
-      phone: 28,
-      age: 23,
-      status: "Unactive",
+      edit: "",
+      delete: "",
     },
   ];
   console.log(JSON.stringify(data));
@@ -227,4 +195,4 @@ function PaginationTableComponent2() {
   return <Table columns={columns} data={data} />;
 }
 
-export default PaginationTableComponent2;
+export default PaginationTableComponent7;

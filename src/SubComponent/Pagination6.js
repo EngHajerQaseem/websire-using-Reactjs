@@ -1,5 +1,6 @@
-import React from "react";
-
+import React,{Fragment} from "react";
+import "./css/Users.css";
+import close from "./images/close.png";
 import { useTable, usePagination } from "react-table";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -132,49 +133,61 @@ function Table({ columns, data }) {
 }
 
 function PaginationTableComponent6() {
-  const columns = React.useMemo(
-    () => [
-      {
-        Header: "Name",
-        columns: [
-          {
-            Header: "User Name",
-            accessor: "username",
-          },
-          {
-            Header: "Gender",
-            accessor: "gender",
-          },
-        ],
-      },
-      {
-        Header: "Info",
-        columns: [
-          {
-            Header: "Roll",
-            accessor: "roll",
-          },
-          {
-            Header: "Edit",
-            accessor: "edit",
-          },
-          {
-            Header: "delete",
-            accessor: "delete",
-          },
-        ],
-      },
-    ],
-    []
-  );
+  const columns = React.useMemo(() => [
+    {
+      Header: "Subject Name",
+      accessor: "subjectname",
+    },
+
+    {
+      Header: "Edit",
+      accessor: "edit",
+      Cell: ({ cell }) => (
+        <React.Fragment>
+             <div id="box2">
+          <div className="adds">
+            <b>Edit Subject </b>
+            <a href="#" className="close">
+              <img src={close} />
+            </a>
+          </div>
+          <div className="for1">
+            <label>Subject Name</label>
+            <input type="text" />
+            
+            <br/>
+            <br/>
+
+          <button className="update">Update</button>
+          </div>
+          
+        </div>
+        <a href="#box2" >
+          <button className="edit">Edit</button>
+        </a>
+        </React.Fragment>
+       
+        
+      ),
+    },
+    {
+      Header: "Activtion",
+      accessor: "activtion",
+      Cell: ({ cell }) => (
+        <a href="#">
+          
+          <button className="delete">UnActive</button>
+        </a>
+      ),
+    },
+  ]);
 
   const data = [
     {
-      username: "Mohammed",
-      gender: "Male",
-      roll: "Super Admin",
-      edit: 25,
-      delete: "Active",
+      subjectname: "English",
+
+      edit: "",
+      delete: "",
     },
   ];
   console.log(JSON.stringify(data));

@@ -83,7 +83,7 @@ const Nav = () => {
               </li>
 
               <li>
-                <Link to="#" className="s-sidebar__nav-link">
+                <Link to="/Grades" className="s-sidebar__nav-link">
                   <img src={classes} className="img1" /><em>Grades</em>
                 </Link>
               </li>
