@@ -157,6 +157,12 @@ function PaginationTableComponent5() {
           {
             Header: "Edit",
             accessor: "edit",
+            Cell: ({ cell }) => (
+              <button >
+                edit
+              </button>
+            )
+
           },
           {
             Header: "delete",
@@ -167,13 +173,13 @@ function PaginationTableComponent5() {
     ],
     []
   );
-
+  let html_content = <p>hello this is sample text</p>;
   const data = [
     {
       username: "Mohammed",
       gender: "Male",
       roll: "Super Admin",
-      edit: 34,
+      edit: "",
       delete: "Active",
     },
   ];
