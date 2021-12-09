@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Login from '../LoginComponent/Login';
 import './css/Header.css';
 import adminImage from './images/admin.png';
 import logout from './images/logout.png';

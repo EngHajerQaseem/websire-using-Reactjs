@@ -1,0 +1,106 @@
+.content{
+    height: 88vh;
+    width: 84.5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 14.2%;
+    top:8%;
+    background-color: white;
+   
+  }
+
+  .add{
+    
+   margin-left: 91%;
+    width: 30%;
+    height: 5%; 
+
+}
+
+#box {
+    width: 28%;
+    height: 20%;
+    text-align: center;
+    
+    border: 3px solid linen;
+    border-radius: 6px;
+    color: #0000cc;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 33%;
+    left: 0;
+    margin: auto;
+    background-color: linen;
+    z-index: 1000;
+  }
+  #box:target {display: block;}
+  .close {
+    display: inline-block;
+    
+    color: #0000cc;
+    
+    margin: 10px;
+    text-decoration: none;
+    
+    font-size: 14pt;
+    cursor:pointer;
+  }
+
+
+  .view{
+    width: 100%;
+    height: 30%;
+    top:5%;
+    position:absolute;
+}
+
+.adds{
+    width:100%;
+    background-color: #190003;
+    color: linen;
+    font-weight: 600;
+    font-size: 25px;
+    border-radius: 6px;
+}
+
+
+.for1{
+    margin-top:5%;
+    margin-left:1%;
+    font-weight: 600;
+}
+
+.for1 label{
+    padding-right: 5%;
+    color: black;
+    font-weight: 600;
+    
+}
+
+.for1 input{
+    margin-right:15%
+}
+
+.close img{
+    width: 20%;
+    margin-left: 100%;
+    margin-bottom:20%;
+}
+
+b{
+    margin-left: 22%;
+}
+
+.save2{
+    width: 20%;
+    border-radius: 6px;
+    background-color:#190033;
+    color: linen;
+    font-weight: 600;
+    margin-left:7%;
+    text-align: center;
+}
