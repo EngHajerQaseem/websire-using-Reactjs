@@ -10,7 +10,25 @@ const Privilage = () => {
     { ID: "3", Manage: "Delete User" },
     { ID: "4", Manage: "View User" },
   ];
+  const Scmanage = [
+    
+    { ID: "4", Manage: "View School" },
+  ];
 
+  const Tecmanage = [
+    
+    { ID: "4", Manage: "View Teacher" },
+  ];
+
+  const Pcmanage = [
+    
+    { ID: "4", Manage: "View Parent" },
+  ];
+
+  const Stcmanage = [
+    
+    { ID: "4", Manage: "View Student" },
+  ];
   const Smanage = [
     { ID: "1", Manage: "Add Subject" },
     { ID: "2", Manage: "Edit Subject" },
@@ -70,9 +88,50 @@ const Privilage = () => {
           </div>
 
           <div className="t1">
-            <p>Subject Management</p>
+            <p>School Management</p>
 
-            {Smanage.map((item, id) => {
+            {Scmanage.map((item, id) => {
+              return (
+                <div className="d1">
+                  <span>
+                    <input type="checkbox" /> {item.Manage}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+          <div className="t1">
+            <p>Teacher Management</p>
+
+            {Tmanage.map((item, id) => {
+              return (
+                <div className="d1">
+                  <span>
+                    <input type="checkbox" /> {item.Manage}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="t1">
+            <p>Parent Management</p>
+
+            {Pcmanage.map((item, id) => {
+              return (
+                <div className="d1">
+                  <span>
+                    <input type="checkbox" /> {item.Manage}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+
+          <div className="t1">
+            <p>Student Management</p>
+
+            {Stcmanage.map((item, id) => {
               return (
                 <div className="d1">
                   <span>
@@ -134,6 +193,10 @@ const Privilage = () => {
                   </div>
                 );
               })}
+            </div>
+
+            <div className="t2">
+                <button>Save Changes</button>
             </div>
           </div>
         </div>
