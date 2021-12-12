@@ -1,34 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../component/Header";
 import Nav from "../component/Nav";
 import Footer from "../component/Footer";
 import "./css/Privilage.css";
 const Privilage = () => {
+  useEffect(() => {
+    document.title = "Privilage Page";
+  }, []);
   const Umanage = [
     { ID: "1", Manage: "Add User" },
     { ID: "2", Manage: "Edit User" },
     { ID: "3", Manage: "Delete User" },
     { ID: "4", Manage: "View User" },
   ];
-  const Scmanage = [
-    
-    { ID: "4", Manage: "View School" },
-  ];
+  const Scmanage = [{ ID: "1", Manage: "View School" }];
 
-  const Tecmanage = [
-    
-    { ID: "4", Manage: "View Teacher" },
-  ];
+  const Tecmanage = [{ ID: "1", Manage: "View Teacher" }];
 
-  const Pcmanage = [
-    
-    { ID: "4", Manage: "View Parent" },
-  ];
+  const Pcmanage = [{ ID: "1", Manage: "View Parent" }];
 
-  const Stcmanage = [
-    
-    { ID: "4", Manage: "View Student" },
-  ];
+  const Stcmanage = [{ ID: "1", Manage: "View Student" }];
   const Smanage = [
     { ID: "1", Manage: "Add Subject" },
     { ID: "2", Manage: "Edit Subject" },
@@ -196,7 +187,7 @@ const Privilage = () => {
             </div>
 
             <div className="t2">
-                <button>Save Changes</button>
+              <button>Save Changes</button>
             </div>
           </div>
         </div>

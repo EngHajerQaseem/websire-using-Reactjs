@@ -1,0 +1,19 @@
+.content{
+    height: 88vh;
+    width: 84.5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 14.2%;
+    top:8%;
+    background-color: white;
+   
+  }
+.setting{
+
+    background-color: linen;
+    width:50%;
+    height:40%;
+    margin-left:20%;
+}  

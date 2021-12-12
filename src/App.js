@@ -12,6 +12,7 @@ import EditUser from "./SubComponent/EditUser";
 import Subjects from "./SubComponent/Subjects";
 import Grades from "./SubComponent/Grades";
 import Privilage from "./SubComponent/Privilage";
+import Settings from "./SubComponent/Settings";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route exact path="/Grades" element={<Grades />} />
 
           <Route path="/Privilage" element={<Privilage />} />
+          <Route path="/Settings"   element={<Settings/>} />
         </Routes>
       </Router>
     </div>

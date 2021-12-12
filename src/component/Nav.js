@@ -113,7 +113,7 @@ const Nav = () => {
                     <img src={manage} className="img1" /><em>Privilage</em>
                   </Link>
                     <li>
-                      <Link to="#" className="s-sidebar__nav-link">
+                      <Link to="/Settings" className="s-sidebar__nav-link">
                         <img src={setting} className="img1" /><em>Setting</em>
                       </Link>
                     </li>
