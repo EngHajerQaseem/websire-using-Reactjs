@@ -178,7 +178,7 @@ function PaginationTableComponent5() {
    
   
   );
-
+  let html_content = <p>hello this is sample text</p>;
   const data = [
     {
       username: "Mohammed",
