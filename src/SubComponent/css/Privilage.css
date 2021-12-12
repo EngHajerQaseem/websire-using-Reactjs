@@ -1,0 +1,61 @@
+.content{
+    height: 88vh;
+    width: 84.5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 14.2%;
+    top:8%;
+    background-color: white;
+   
+  }
+
+  .input{
+    width: 84.5%;
+    height: 5vh;
+  }
+.input input{
+    border-radius: 6px;
+
+}  
+
+.input label{
+    font-weight: 600;
+}
+
+.maint{
+
+    width: 1000%;
+    height: 80vh;
+    margin-top: 5%;
+    margin-right: 12%;
+    border-radius: 6px;
+}
+
+.t1{
+    background-color: linen;
+    width: 100%;
+    height: 10vh;
+    border-radius: 6px;
+    flex-direction: row;
+  
+    
+}
+
+
+.d1{
+    flex-direction:column;
+    display:inline-flex ;
+    padding-left:10%;
+    font-size:16px;
+    font-weight: 600;
+    
+}
+
+.t1 p{
+    background-color: #190003;
+    text-align: center;
+    color: linen;
+    font-size: 20px;
+}

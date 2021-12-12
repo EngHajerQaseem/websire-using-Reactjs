@@ -11,6 +11,7 @@ import AddUser from "./SubComponent/AddUser";
 import EditUser from "./SubComponent/EditUser";
 import Subjects from "./SubComponent/Subjects";
 import Grades from "./SubComponent/Grades";
+import Privilage from "./SubComponent/Privilage";
 
 function App() {
   return (
@@ -36,7 +37,9 @@ function App() {
 
           <Route exact path="/Subjects" element={<Subjects />} />
 
-          <Route exact path="/Grades"    element={<Grades/>} />
+          <Route exact path="/Grades" element={<Grades />} />
+
+          <Route path="/Privilage" element={<Privilage />} />
         </Routes>
       </Router>
     </div>

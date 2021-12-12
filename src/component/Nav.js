@@ -15,6 +15,8 @@ import test from './images/test.png';
 import unit from './images/unit.png';
 import achivement from './images/achivement.png';
 import setting from './images/setting.png';
+import manage from './images/manage.png';
+
 
 
 const Nav = () => {
@@ -92,17 +94,24 @@ const Nav = () => {
                 <Link to="#" className="s-sidebar__nav-link">
                   <img src={test} className="img1" /><em>Test</em>
                 </Link>
-
+</li>
                 <li>
                   <Link to="#" className="s-sidebar__nav-link">
                     <img src={unit} className="img1" /><em>Units</em>
                   </Link>
+                  
+              
 
                   <li>
                     <Link to="#" className="s-sidebar__nav-link">
                       <img src={achivement} className="img1" /><em>Achivement</em>
                     </Link>
-
+                    
+                   
+                    <li>
+                  <Link to="/Privilage" className="s-sidebar__nav-link">
+                    <img src={manage} className="img1" /><em>Privilage</em>
+                  </Link>
                     <li>
                       <Link to="#" className="s-sidebar__nav-link">
                         <img src={setting} className="img1" /><em>Setting</em>
