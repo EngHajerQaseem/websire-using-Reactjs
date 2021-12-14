@@ -13,6 +13,7 @@ import Subjects from "./SubComponent/Subjects";
 import Grades from "./SubComponent/Grades";
 import Privilage from "./SubComponent/Privilage";
 import Settings from "./SubComponent/Settings";
+import Units from "./SubComponent/Units";
 
 function App() {
   return (
@@ -40,8 +41,10 @@ function App() {
 
           <Route exact path="/Grades" element={<Grades />} />
 
+          <Route path="/Units" element={<Units />} />
+
           <Route path="/Privilage" element={<Privilage />} />
-          <Route path="/Settings"   element={<Settings/>} />
+          <Route path="/Settings" element={<Settings />} />
         </Routes>
       </Router>
     </div>

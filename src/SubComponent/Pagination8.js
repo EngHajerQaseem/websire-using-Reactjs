@@ -132,11 +132,26 @@ function Table({ columns, data }) {
   );
 }
 
-function PaginationTableComponent7() {
+function PaginationTableComponent8() {
+  const grades = [
+    { ID: "1", gradname: "First Grade" },
+    { ID: "2", gradname: "Second Grade" },
+    { ID: "3", gradname: "Third Grade" }
+
+  ];
+
+
+  const subjects = [
+    { ID: "1", subname: "Quran" },
+    { ID: "2", subname: "Islamic" },
+    { ID: "3", subname: "Arabic" }
+
+  ];
+
   const columns = React.useMemo(() => [
     {
-      Header: "Grade Name",
-      accessor: "gradename",
+      Header: "Unit Name",
+      accessor: "unitname",
     },
 
     {
@@ -144,25 +159,48 @@ function PaginationTableComponent7() {
       accessor: "edit",
       Cell: ({ cell }) => (
         <React.Fragment>
-             <div id="box2">
-          <div className="editg">
-            <b>Edit Grade </b>
+             <div id="box6">
+          <div className="adds">
+            <b>Edit Unit </b>
             <a href="#" className="close">
               <img src={close} />
             </a>
           </div>
-          <div className="gname">
-            <label>Grade Name</label>
+          <div className="for5">
+            <label>Unit Name</label>
             <input type="text" />
+            <div className="for6">
+            <label>Subject Name </label>
+            
+            <select>
+            {subjects.map((name)=>
+                     <option>{name.subname}</option>
+                    
+                
+                )}
+              
+            </select>
+          </div>
+
+          <div className="for7">
+          <label>Grade Name </label>
+          <select>
+          {grades.map((name)=>
+                     <option>{name.gradname}</option>
+                    
+                
+                )}
+          </select>
+          </div>
             
             <br/>
             
 
-          <button className="update">Update</button>
+          <button className="update2">Update</button>
           </div>
           
         </div>
-        <a href="#box2" >
+        <a href="#box6" >
           <button className="edit">Edit</button>
         </a>
         </React.Fragment>
@@ -184,7 +222,7 @@ function PaginationTableComponent7() {
 
   const data = [
     {
-      gradename: "First Grade",
+        unitname: "First Unit",
 
       edit: "",
       delete: "",
@@ -195,4 +233,4 @@ function PaginationTableComponent7() {
   return <Table columns={columns} data={data} />;
 }
 
-export default PaginationTableComponent7;
+export default PaginationTableComponent8;

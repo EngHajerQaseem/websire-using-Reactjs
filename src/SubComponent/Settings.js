@@ -1,28 +1,32 @@
-import React,{useEffect} from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../component/Header";
 import Nav from "../component/Nav";
 import Footer from "../component/Footer";
-import './css/Settings.css';
+import "./css/Settings.css";
 
+const Settigs = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+  useEffect(() => {
+    document.title = "Settings Page";
+  }, []);
 
-const Settigs=()=>{
-    useEffect(() => {
-        document.title = "Settings Page";
-      }, []);
-    return(
-       <React.Fragment>
-           <Header/>
-           <Nav/>
-        <div className="content">
-            <div class="setting">
-                
-            </div>
-            
-        </div>
+  const user = { ID: "3", Name: "Hajer Qaseem", password: "user123" };
+  const languages = [
+    { ID: "1", Lang: "English" },
+    { ID: "2", Lang: "Arabic" }
+  ];
 
-        <Footer/>
-        </React.Fragment>
-    )
-}
+  return (
+    <React.Fragment>
+      <Header />
+      <Nav />
+      <div className="content">
+      
+      </div>
 
-export default Settigs
+      <Footer />
+    </React.Fragment>
+  );
+};
+
+export default Settigs;

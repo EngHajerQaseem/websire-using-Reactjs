@@ -13,13 +13,13 @@ const Privilage = () => {
     { ID: "3", Manage: "Delete User" },
     { ID: "4", Manage: "View User" },
   ];
-  const Scmanage = [{ ID: "1", Manage: "View School" }];
+  const Scmanage = [{ ID: "1", Manage: "View School" },{ID:"2",Manage:"Delete School"}];
 
-  const Tecmanage = [{ ID: "1", Manage: "View Teacher" }];
+  const Tecmanage = [{ ID: "1", Manage: "View Teacher" },{ID:"2",Manage:"Delete Teacher"}];
 
-  const Pcmanage = [{ ID: "1", Manage: "View Parent" }];
+  const Pcmanage = [{ ID: "1", Manage: "View Parent" },{ID:"2",Manage:"Delete Parent"}];
 
-  const Stcmanage = [{ ID: "1", Manage: "View Student" }];
+  const Stcmanage = [{ ID: "1", Manage: "View Student" },{ID:"2",Manage:"Delete Student"}];
   const Smanage = [
     { ID: "1", Manage: "Add Subject" },
     { ID: "2", Manage: "Edit Subject" },
@@ -94,7 +94,7 @@ const Privilage = () => {
           <div className="t1">
             <p>Teacher Management</p>
 
-            {Tmanage.map((item, id) => {
+            {Tecmanage.map((item, id) => {
               return (
                 <div className="d1">
                   <span>

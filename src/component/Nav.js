@@ -78,15 +78,16 @@ const Nav = () => {
                 </Link>
               </li>
 
-              <li>
-                <Link to="/Subjects" className="s-sidebar__nav-link">
-                  <img src={subject} className="img1" /><em>Subjects</em>
-                </Link>
-              </li>
 
               <li>
                 <Link to="/Grades" className="s-sidebar__nav-link">
                   <img src={classes} className="img1" /><em>Grades</em>
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/Subjects" className="s-sidebar__nav-link">
+                  <img src={subject} className="img1" /><em>Subjects</em>
                 </Link>
               </li>
 
@@ -96,7 +97,7 @@ const Nav = () => {
                 </Link>
 </li>
                 <li>
-                  <Link to="#" className="s-sidebar__nav-link">
+                  <Link to="/Units" className="s-sidebar__nav-link">
                     <img src={unit} className="img1" /><em>Units</em>
                   </Link>
                   

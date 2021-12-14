@@ -25,7 +25,6 @@
     width: 28%;
     height: 20%;
     text-align: center;
-    
     border: 3px solid linen;
     border-radius: 6px;
     color: #0000cc;
@@ -42,24 +41,63 @@
   #box:target {display: block;}
 
   #box2 {
-    width: 28%;
-    height: 80%;
+    width: 23%;
+    height:17%;
     text-align: center;
-    
     border: 3px solid linen;
     border-radius: 6px;
     color: #0000cc;
     display: none;
-    position: absolute;
-    top: 15;
+    position: fixed;
+    top: 0;
     right: 0;
-    bottom: 0%;
-    left: 0;
+    bottom: 26%;
+    left: 11%;
     margin: auto;
     background-color: linen;
     z-index: 1000;
   }
   #box2:target {display: block;}
+
+  #box3 {
+    width: 28%;
+    height: 23%;
+    text-align: center;
+    border: 3px solid linen;
+    border-radius: 6px;
+    color: #0000cc;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 30%;
+    left: 0;
+    margin: auto;
+    background-color: linen;
+    z-index: 1000;
+  }
+  #box3:target {display: block;}
+
+  
+  #box4 {
+    width: 28%;
+    height: 75%;
+    text-align: center;
+    border: 3px solid linen;
+    border-radius: 6px;
+    color: #0000cc;
+    display: none;
+    position: absolute;
+    top: 95%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: linen;
+    z-index: 1000;
+  }
+  #box4:target {display: block;}
+
   .close {
     display: inline-block;
     
@@ -109,9 +147,48 @@
    
 }
 
+.adds3{
+    width:100%;
+    background-color: #190003;
+    color: linen;
+    font-weight: 600;
+    font-size: 25px;
+    border-radius: 6px;
+   
+}
+
+.editg{
+
+    width:100%;
+    background-color: #190003;
+    color: linen;
+    font-weight: 600;
+    font-size: 25px;
+    border-radius: 6px;
+
+}
+
+.gname{
+    margin-top:5%;
+    margin-left:10%;
+    font-weight: 600;
+    height: 100%;
+
+}
+
+.gname label{
+    padding-right: 5%;
+    color: black;
+    font-weight: 600;
+}
+
+.gname input{
+    margin-right:15%
+}
+
 
 .for1{
-    margin-top:5%;
+    margin-top:2%;
     margin-left:1%;
     font-weight: 600;
     height: 100%;
@@ -125,7 +202,45 @@
 }
 
 .for1 input{
-    margin-right:15%
+    margin-right:15%;
+}
+
+
+.for4{
+    margin-top:2%;
+    margin-left:1%;
+    font-weight: 600;
+    height: 20%;
+    
+}
+
+.for4 label{
+    padding-right: 5%;
+    color: black;
+    font-weight: 600;
+    
+}
+
+.for4 input{
+    margin-right:15%;
+}
+
+.for3{
+    margin-top:3%;
+    padding-right:2%;
+    font-weight: 600;  
+    margin-right:10%;
+
+}
+
+.for3 select{
+    width: 47%;
+    padding-left:12%;
+
+}
+
+.for3  label {
+    margin-right:1%;
 }
 
 
@@ -163,7 +278,7 @@ b{
     background-color:#190033;
     color: linen;
     font-weight: 600;
-    margin-left:7%;
+    margin-left:3%;
     text-align: center;
 }
 .update{
@@ -172,7 +287,22 @@ b{
     background-color:#190033;
     color: linen;
     font-weight: 600;
-    margin-left:7%;
+    margin-left:2%;
     text-align: center;
+    margin-top:5%;
 }
+
+.update2{
+    width: 20%;
+    border-radius: 6px;
+    background-color:#190033;
+    color: linen;
+    font-weight: 600;
+    margin-left:2%;
+    text-align: center;
+    margin-top:-3%;
+
+}
+
+
 

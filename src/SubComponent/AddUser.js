@@ -23,7 +23,7 @@ const AddUser = () => {
             <label>User Name </label>
             <input type="text" />
           </div>
-          <div className="form1">
+          <div className="f1">
             <label>Gender </label>
             <select>
               <option>Male</option>
@@ -33,11 +33,11 @@ const AddUser = () => {
 
           <div className="form2">
             <label>Password</label>
-            <input type="text" />
+            <input type="password" />
           </div>
           <div className="form3">
             <label>Confirm Password </label>
-            <input type="text" />
+            <input type="password" />
           </div>
 
           <div className="form4">

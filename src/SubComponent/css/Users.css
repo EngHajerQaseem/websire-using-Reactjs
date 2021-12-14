@@ -64,7 +64,7 @@ content{
 
 .form{
     margin-top:4%;
-    margin-left: 14%;
+    margin-left: 10%;
     font-weight: 600;
 }
 
@@ -72,20 +72,20 @@ content{
     padding-right: 5%;
 }
 
-.form1{
+.f1{
     margin-top:3%;
-    padding-left:15%;
+    padding-left:16%;
     font-weight: 600;
 
 }
 
-.form1 select{
+.f1 select{
     width: 44%;
-    padding-left:10%;
+    padding-left:15%;
 }
 
-.form1 label{
-    padding-right:10.5%
+.f1 label{
+    margin-right:9.5%;
 }
 
 .form2{

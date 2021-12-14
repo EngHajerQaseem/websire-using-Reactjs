@@ -133,6 +133,12 @@ function Table({ columns, data }) {
 }
 
 function PaginationTableComponent6() {
+  const grades = [
+    { ID: "1", gradname: "First Grade" },
+    { ID: "2", gradname: "Second Grade" },
+    { ID: "3", gradname: "Third Grade" }
+
+  ];
   const columns = React.useMemo(() => [
     {
       Header: "Subject Name",
@@ -144,25 +150,37 @@ function PaginationTableComponent6() {
       accessor: "edit",
       Cell: ({ cell }) => (
         <React.Fragment>
-             <div id="box2">
+             <div id="box4">
           <div className="adds">
             <b>Edit Subject </b>
             <a href="#" className="close">
               <img src={close} />
             </a>
           </div>
-          <div className="for1">
+          <div className="for4">
             <label>Subject Name</label>
             <input type="text" />
+            <div className="for3">
+            <label>Grade Name </label>
+            
+            <select>
+            {grades.map((name)=>
+                     <option>{name.gradname}</option>
+                    
+                
+                )}
+              
+            </select>
+          </div>
             
             <br/>
-            <br/>
+            
 
-          <button className="update">Update</button>
+          <button className="update2">Update</button>
           </div>
           
         </div>
-        <a href="#box2" >
+        <a href="#box4" >
           <button className="edit">Edit</button>
         </a>
         </React.Fragment>
