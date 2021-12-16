@@ -11,5 +11,177 @@ content{
  
 }
 
+.hnav{
+  width: 15%;
+  background-color: #11031F;
+  opacity: 0.8;
+  height:49.8%;
+  margin-left:15%;
+  margin-top:4%;
+  flex-direction:column;
+  display: flex;
+  border: 3px solid linen;
+  color: linen;
+  text-decoration-color: none;
+  position: absolute;
+  
+  
+}
+
+.hnav a{
+  text-decoration: none;
+  color: #190003;
+  font-weight: 600;
+}
+
+.span1{
+  width: 100%;
+  height:10%;
+  background-color: linen;
+  margin-top:40%;
+  padding-top:5%;
+ text-align: center;
+ 
+}
+
+
+.span2{
+  width: 100%;
+  height:10%;
+  background-color: linen;
+  margin-top:13%;
+  padding-top:5%;
+ text-align: center;
+}
+
+
+.span3{
+  width: 100%;
+  height:10%;
+  background-color: linen;
+  margin-top:13%;
+  padding-top:5%;
+ text-align: center;
+}
+
+
+#div1 {
+  width: 40%;
+  height: 49.8%;
+  text-align: center;
+  border: 3px solid linen;
+  color: black;
+  display: none;
+  position: absolute;
+  top: 0;
+  right:2%;
+  bottom: 35%;
+  left: 0;
+  margin: auto;
+  background-color: linen;
+ 
+ 
+}
+#div1:target {display: block;}
+
+.s1{
+ padding:8%;
+}
+
+.s1 label{
+  margin-right:5%;
+  font-weight: 600;
+}
+
+
+.s2{
+  padding-top:14%;
+margin-left:14%;
+
+width: 100%;
+  
+ }
+ 
+ .s2 label{
+  
+   font-weight: 600;
+ }
+
+ .s3{
+  padding:8%;
+  padding-top:14%;
+  
+ }
+ 
+ .s3 label{
+  padding-top:1%;
+   font-weight: 600;
+ }
+
+#div2 {
+  width: 40%;
+  height: 49.8%;
+  text-align: center;
+  border: 3px solid linen;
+  color: black;
+  display: none;
+  position: absolute;
+  top: 0;
+  right:2%;
+  bottom: 35%;
+  left: 0;
+  margin: auto;
+  background-color: linen;
+ 
+}
+#div2:target {display: block;}
+
+#div3 {
+  width: 40%;
+  height: 49.8%;
+  text-align: center;
+  border: 3px solid linen;
+  color: black;
+  display: none;
+  position: absolute;
+  top: 0;
+  right:2%;
+  bottom: 35%;
+  left: 0;
+  margin: auto;
+  background-color: linen;;
+ 
+  
+}
+#div3:target {display: block;}
+
+.save2{
+  margin-top: 7%;
+}
+
+.save3{
+  width: 20%;
+    border-radius: 6px;
+    background-color:#190033;
+    color: linen;
+    font-weight: 600;
+    margin-left:7%;
+    text-align: center;
+    margin-top:7%;
+}
+
+.s4{
+  margin-top: 25%;
+  font-weight: 600;
+  
+}
+
+.l1{
+  padding-right:9%;
+}
+
+#html{
+  padding-right:5%;
+}
 
 
